@@ -23,13 +23,13 @@
 	            <li class="nav-item">
 	                <a class="nav-link" href="index.html">Vijesti</a>
 	            </li>
-	            <li class="nav-item active">
+	            <li class="nav-item">
 	                <a class="nav-link" href="prijava-ispita.html">Prijava ispita</a>
 	            </li>
 	            <li class="nav-item">
 	                <a class="nav-link" href="raspored-nastave.html">Raspored nastave</a>
 	            </li>
-	            <li class="nav-item">
+	            <li class="nav-item active">
 	                <a class="nav-link" href="raspored-ispita.html">Raspored ispita</a>
 	            </li>
 	            <li class="nav-item">
@@ -50,9 +50,24 @@
 	    </div>
 	</nav>
 
-	<div class="container-fluid full-height">
-		<iframe src="https://infokiosk.unssa.rs.ba/" height="100%" width="100%">
-		</iframe>
+	<div class="container">
+		<div class="row ">
+			<button type="button" class="btn btn-primary btn-lg" id="back" onclick="back()">Back</button>
+		</div>
+		<div class="row justify-content-center">
+			<div class="center">
+				<button type="button" class="btn btn-primary btn-lg btn-block" onclick="iframe2Src('first')">I godina</button>
+				<button type="button" class="btn btn-primary btn-lg btn-block" onclick="iframe2Src('second')">II godina</button>
+				<button type="button" class="btn btn-primary btn-lg btn-block" onclick="iframe2Src('third')">III godina</button>
+				<button type="button" class="btn btn-primary btn-lg btn-block" onclick="iframe2Src('fourth')">IV godina</button>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<iframe id="iframe" width="100%" height="450">
+			</iframe>
+		</div>
 	</div>
 
     <!-- Optional JavaScript -->
@@ -60,5 +75,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

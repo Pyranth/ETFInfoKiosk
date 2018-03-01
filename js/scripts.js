@@ -17,6 +17,22 @@ function iframeSrc(year)
 	$('#back').show();
 }
 
+function iframe2Src(year)
+{
+	if (year == 'first')
+		iframe.src = "http://www.etf.unssa.rs.ba/include/studenti/rasporedi/prva_godina_2017_2018_ispiti.pdf";
+	else if (year == 'second')
+		iframe.src = "http://www.etf.unssa.rs.ba/include/studenti/rasporedi/druga_godina_2017_2018_ispiti.pdf";
+	else if (year == 'third')
+		iframe.src = "http://www.etf.unssa.rs.ba/include/studenti/rasporedi/treca_godina_2017_2018_ispiti.pdf";
+	else if (year == 'fourth')
+		iframe.src = "http://www.etf.unssa.rs.ba/include/studenti/rasporedi/cetvrta_godina_2017_2018_ispiti.pdf";
+
+	$('.center').hide();
+	$('#iframe').show();
+	$('#back').show();
+}
+
 function back()
 {
 	$('.center').show();
