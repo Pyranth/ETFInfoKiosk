@@ -1,8 +1,40 @@
 .navbar{
 	min-height: 80px;
-	margin-bottom: 20px;
 }
 
 .full-height{
 	height: 80vh;
+}
+
+.center button{
+	width: 400px;
+	height: 150px;
+	font-size: 32px;
+}
+
+.container{
+	margin-top: 20px;
+}
+
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.btn-group-years{
+	margin-top: 20px;
+}
+
+#back{
+	position: fixed;
+	top: 150px;
+	left: 50px;
+	width: 200px;
+	height: 200px;
+	z-index: 999;
+}
+
+iframe{
+	position: absolute;
+	height: 90vh;
 }

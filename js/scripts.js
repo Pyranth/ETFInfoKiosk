@@ -12,7 +12,7 @@ function iframeSrc(year)
 	else if (year == 'fourth')
 		iframe.src = "http://www.etf.unssa.rs.ba/include/studenti/rasporedi/rasporedi_cetvrta_godina_1718_ljs.pdf";
 
-	$('.center').hide();
+	$('.btn-group-years').hide();
 	$('#iframe').show();
 	$('#back').show();
 }
@@ -28,14 +28,14 @@ function iframe2Src(year)
 	else if (year == 'fourth')
 		iframe.src = "http://www.etf.unssa.rs.ba/include/studenti/rasporedi/cetvrta_godina_2017_2018_ispiti.pdf";
 
-	$('.center').hide();
+	$('.btn-group-years').hide();
 	$('#iframe').show();
 	$('#back').show();
 }
 
 function back()
 {
-	$('.center').show();
+	$('.btn-group-years').show();
 	$('#iframe').hide();
 	$('#back').hide();
 }
